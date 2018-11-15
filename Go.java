@@ -21,7 +21,7 @@ public class Go extends Move {
 
         if(previous == current)
         {
-            if(current.directionLocked(s))
+            if(current.directionLocked(s))	// No method in place, did you mean direction class?
             {
                 System.out.println("The path was locked\n");
             }

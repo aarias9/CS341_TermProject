@@ -17,7 +17,7 @@ public class Drop extends Move {
         if(a != null)
         {
             c.dropItem(s);
-            System.out.println(c.name + " Has Dropped " + s + " in " + p.getName() +"\n");
+            System.out.println(c.name + " Has Dropped " + s + " in " + p.name() +"\n");
         }
         else
             System.out.println(c.name + " You do not have " + s + " item to drop.\n");

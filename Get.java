@@ -13,11 +13,11 @@ public class Get extends Move{
 
     @Override
     public void execute( ) {
-        Artifact a = p.removeArtifactByName( s );
+        Artifact a = p.removeArtifactByName( s );	// different name and no return
         if(a != null)
         {
             c.addItem(a);
-            System.out.println(c.name() + " picked up " + a.getName());
+            System.out.println(c.name() + " picked up " + a.name());
         }
         else
             System.out.println("Sorry, " + c.name + ", there is no " + s + "here\n");

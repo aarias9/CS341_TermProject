@@ -145,7 +145,7 @@ public class Place
             System.out.println("Direction ID: " + d.getID());
             System.out.println("Direction:    " + d.getDirection());
         }
-        for(Artifact a : this.artifacts) a.display();
+        for(Artifact a : this.artifacts) a.print();		// No display method in artifact, using print for now
     }
     
     /** 
