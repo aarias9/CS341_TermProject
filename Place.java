@@ -2,10 +2,7 @@
  * name: Juan C. Zambrano
  * ACCCid: jzambr7
  **/
-import java.util.Vector;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.HashMap;
+import java.util.*;
 
 public class Place 
 {
@@ -165,6 +162,26 @@ public class Place
     
     public void removeArtifact(Artifact a) {
         artifacts.remove(a);
+    }
+
+
+    public String getRandomItem()
+    {
+        Random rand = new Random();
+        if(artifacts.size() <= 0)
+            return "None";
+        else
+            return artifacts.get(rand.nextInt(artifacts.size())).name();
+    }
+
+    public String getRandomDirection()
+    {
+        Random rand = new Random();
+        if(directions.size() <= 0)
+            return "LOOK";
+        else
+            return directions.get(rand.nextInt(directions.size())).toString();
+
     }
 
 }
