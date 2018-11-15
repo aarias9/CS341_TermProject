@@ -18,11 +18,14 @@ Supplied Code:
 	AI.java
 	AI_F.java
 	AI_H.java
+	aarias9CharacterUML.mdj
 
     Juan Zambrano:
 	Direction.java
 	Place.java
+	RadiatedPlace.java
 	//Adding more places soon
+	jzambr7HW4_UML.mdj
 
     Robert Barrera:
 	Artifact.java
@@ -38,7 +41,6 @@ OTHER FILES:
 	GameTester.java
 	CleanLineScanner.java
 	printInfo.java
-	aarias9CharacterUML.mdj
 	keyboardScanner.java
 	makefile
 

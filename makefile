@@ -37,6 +37,7 @@ CLASSES = \
 	PLayer.java \
 	PrintInfo.java \
 	Quit.java \
+	RadiatedPlace.java \
 	UI.java \
 	Use.java
 
