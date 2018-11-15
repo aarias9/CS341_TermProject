@@ -1,10 +1,10 @@
-# Alfonso Arias
-# U.of Illinois, Chicago
-# CS 342, Fall 2018
-# Term Project: Part III
-# 
-# makefile
-#
+#  Alfonso Arias, aarias9
+#  Partners:
+#    Juan Zambrano, jzambr7
+#    Robert Barrera, rbarre4
+#  U. of Illinois, Chicago
+#  CS 341, FAll 342
+#  Term Project: Part IV
 
 JFLAGS = -g
 JC = javac
@@ -13,18 +13,32 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
-	Direction.java \
-	Game.java \
-	Place.java \
+	AI.java \
+	AI_F.java \
+	AI_H.java \
 	Artifact.java \
+	Attack.java \
 	Character.java \
-	Player.java \
-	NPC.java \
-	DecisionMaker.java \
-	keyboardScanner.java \
 	CleanLineScanner.java \
+	DecisionMaker.java \
+	Drop.java \
+	Friendly.java \
+	Game.java \
+	GameTester.java \
+	Get.java \
+	Go.java \
+	Heal.java \
+	Hostile.java \
+	keyboardScanner.java \
+	Look.java \
+	Move.java \
+	NPC.java \
+	Place.java \
+	PLayer.java \
 	PrintInfo.java \
-	GameTester.java
+	Quit.java \
+	UI.java \
+	Use.java
 
 default: classes
 
