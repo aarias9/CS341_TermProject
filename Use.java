@@ -1,3 +1,14 @@
+/**
+ *  Alfonso Arias
+ *  U. of Illinois, Chicago
+ *  CS 342, Fall 2018
+ *  Term Project: Part IV
+ *
+ *  use.java
+ *
+ *
+ */
+
 public class Use extends Move {
     private Character c;
     private Place p;

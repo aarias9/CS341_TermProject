@@ -1,3 +1,12 @@
+/**
+ *  Robert Barrera
+ *  U. of Illinois, Chicago
+ *  CS 342, Fall 2018
+ *  Term Project: Part IV
+ *
+ *  Artifacts.java
+ *
+ */
 import java.util.*;
 
 public class Artifact {

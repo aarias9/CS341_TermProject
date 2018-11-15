@@ -2,7 +2,7 @@
  *  Alfonso Arias
  *  U. of Illinois, Chicago
  *  CS 342, Fall 2018
- *  Term Project: Part III
+ *  Term Project: Part IV
  *
  *  CHARACTER.java
  *
@@ -229,7 +229,7 @@ public abstract class Character {
         for(Artifact a : items)
         {
             System.out.println("Dropping " + a.name());
-            if(true)
+            if(!current.isExit())
                 current.addArtifact(a);
             else
             {

@@ -1,3 +1,14 @@
+/**
+ *  Alfonso Arias
+ *  U. of Illinois, Chicago
+ *  CS 342, Fall 2018
+ *  Term Project: Part IV
+ *
+ *  UI.java
+ *
+ *
+ */
+
 import java.util.Scanner;
 
 public class UI implements DecisionMaker {

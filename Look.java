@@ -1,3 +1,13 @@
+/**
+ *  Robert Barrera
+ *  U. of Illinois, Chicago
+ *  CS 342, Fall 2018
+ *  Term Project: Part IV
+ *
+ *  MOVE.java
+ *
+ */
+
 public class Look extends Move
 {
     private Place p;
