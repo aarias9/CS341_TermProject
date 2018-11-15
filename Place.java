@@ -142,7 +142,8 @@ public class Place
             System.out.println("Direction ID: " + d.getID());
             System.out.println("Direction:    " + d.getDirection());
         }
-        for(Artifact a : this.artifacts) a.display();
+        for(Artifact a : this.artifacts)
+            a.display();
     }
     
     /** 
@@ -182,6 +183,35 @@ public class Place
         else
             return directions.get(rand.nextInt(directions.size())).toString();
 
+    }
+
+    // Checks if the path is locked.
+    public boolean directionLocked(String dir)
+    {
+        String x = String.valueOf(dir.toUpperCase());
+        for (int i = 0; i < directions.size(); i++) {
+            if (directions.get(i).match(x)) {
+                return directions.get(i).isLocked();
+            }
+        }
+        return false;
+    }
+
+    public Artifact removeArtifactByName(String name)
+    {
+        for(int i = 0; i < artifacts.size(); i++)
+        {
+            if(name.equalsIgnoreCase(this.artifacts.get(i).name()) && this.artifacts.get(i).weight() != -1)
+            {   Artifact Item = this.artifacts.get(i);
+                artifacts.remove(artifacts.get(i));
+                return Item;
+            }
+            if(this.artifacts.get(i).weight() == -1)
+                System.out.println("This Item cannot be picked up, Its too HEAVY");
+            else
+                return null;
+        }
+        return null;
     }
 
 }

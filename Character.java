@@ -54,9 +54,9 @@ public abstract class Character {
         this.placeID = spawnPoint;
 
         if(placeID > 0)
-            current = Place.getPlaceByID(placeID);
+            current = Place.getPlaceById(placeID);
         else if (placeID == 0)
-            current = Place.getPlaceByID(0);
+            current = Place.getPlaceById(0);
         else
         {
             System.err.println("Error, Character needs to Spawn in a valid Location.");
@@ -149,7 +149,7 @@ public abstract class Character {
     {
         current.removeCharacter(this);
         current = p;
-        if(!current.getName().equals("EXIT"))
+        if(!current.name().equals("EXIT"))
         {
             System.out.println("thanks for playing " + name + ".");
             dropAllItems();
@@ -158,7 +158,7 @@ public abstract class Character {
         else
         {
             current.addCharacter(this);
-            System.out.println(name + " Moved to " + current.getName() + ".");
+            System.out.println(name + " Moved to " + current.name() + ".");
         }
         return;
     }
@@ -182,9 +182,9 @@ public abstract class Character {
     {
         for(int i = 0; i < items.size(); i++)
         {
-            System.out.println("Name: " + this.items.get(i).getName() + "\n" +
-                    "Value " + this.items.get(i).Value() + "\n" +
-                    "Weight: " + this.items.get(i).Weight() + "\n");
+            System.out.println("Name: " + this.items.get(i).name() + "\n" +
+                    "Value " + this.items.get(i).value() + "\n" +
+                    "Weight: " + this.items.get(i).weight() + "\n");
         }
     }
 
@@ -197,7 +197,7 @@ public abstract class Character {
     {
         for(Artifact a : items)
         {
-            if(a.getName().equalsIgnoreCase(s))
+            if(a.name().equalsIgnoreCase(s))
                 return a;
         }
         return null;
@@ -209,16 +209,16 @@ public abstract class Character {
         if(items.size() <= 0)
             return "None";
         else
-            return items.get(rand.nextInt(items.size())).getName();
+            return items.get(rand.nextInt(items.size())).name();
     }
 
     public void dropItem(String name) {
         for(Artifact a : items)
         {
-            if(a.getName().equalsIgnoreCase(name)) {
+            if(a.name().equalsIgnoreCase(name)) {
                 items.remove(a);
-                current.addArtifacts(a);
-                System.out.println(this.name + " dropped " + name + " in " + current.getName());
+                current.addArtifact(a);
+                System.out.println(this.name + " dropped " + name + " in " + current.name());
                 return;
             }
         }
@@ -228,13 +228,13 @@ public abstract class Character {
     {
         for(Artifact a : items)
         {
-            System.out.println("Dropping " + a.getName());
+            System.out.println("Dropping " + a.name());
             if(true)
-                current.addArtifacts(a);
+                current.addArtifact(a);
             else
             {
-                Place p = Place.getPlaceByID(0);
-                p.addArtifacts(a);
+                Place p = Place.getPlaceById(0);
+                p.addArtifact(a);
             }
         }
         items = null;

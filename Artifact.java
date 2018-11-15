@@ -22,7 +22,7 @@ public class Artifact {
 	private int armorPoints;	// Armor points
 	
 	// Constructor for a Artifact
-	public Artifact(Scanner passed, int version) {
+	public Artifact(Scanner passed, float version) {
 		String line = CleanLineScanner.getCleanLine(passed);	// Get a clean line
 		Scanner cleanedLine = new Scanner(line);	// New scanner for parsing line
 		int descNum = 0;
@@ -65,7 +65,7 @@ public class Artifact {
 			Character.getCharacterBYID(placeOrCharID).addItem(this);
 		}
 		else {
-			Place.getPlaceByID(placeOrCharID).addArtifact(this);	// Add this artifact to it's place
+			Place.getPlaceById(placeOrCharID).addArtifact(this);	// Add this artifact to it's place
 		}
 		
 		
@@ -132,7 +132,7 @@ public class Artifact {
 	}
 	
 	// Prints out artifact information
-	public void print() {
+	public void display() {
 		System.out.println("Name is: " + name + ", " + "ID is: " + ID);
 		System.out.print("Description is: " + description);
 		System.out.println("Value is: " + value + ", Mobility is: " + mobility);
