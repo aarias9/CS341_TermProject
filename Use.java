@@ -1,4 +1,4 @@
-public class Use extends Move{
+public class Use extends Move {
     private Character c;
     private Place p;
     private String s;

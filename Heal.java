@@ -1,4 +1,4 @@
-public class Heal extends Move{
+public class Heal extends Move {
 
     private Artifact a;
     private Character c;

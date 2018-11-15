@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Hostile extends NPC{
+public class Hostile extends NPC {
 
     public Hostile(Scanner scan, float version, int spawnPoint)
     {
@@ -9,7 +9,7 @@ public class Hostile extends NPC{
         isHostile = true;
         isFriendly = false;
         decider = new AI_H();
-        nPlayers++;
+        //Character.nPlayers++;
     }
 
     public void makeMove()

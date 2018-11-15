@@ -20,7 +20,7 @@ public class NPC extends Character {
 
         isPLaying = true;
         decider = new AI( );
-        nPlayers++;
+        //nPlayers++;
     }
 
     public int getID()

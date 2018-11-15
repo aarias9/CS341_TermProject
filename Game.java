@@ -94,9 +94,9 @@ public class Game
                         if(type.equalsIgnoreCase("NPC"))
                             new NPC(scan, GameVersion, spawnPoint);
                         if(type.equalsIgnoreCase("HOSTILE"))
-                            new NPC(scan, GameVersion, spawnPoint);
+                            new Hostile(scan, GameVersion, spawnPoint);
                         if(type.equalsIgnoreCase("FRIENDLY"))
-                            new NPC(scan, GameVersion, spawnPoint);
+                            new Friendly(scan, GameVersion, spawnPoint);
                     }
                 }
 
