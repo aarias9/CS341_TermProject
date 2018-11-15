@@ -8,13 +8,39 @@ Term Project: Part IV
 
 Supplied Code:
     Alfonso Arias:
+	Character.java
+	Player.java
+	NPC.java
+	Friendly.java
+	Hostile.java
+	DecisionMaker.java
+	UI.java
+	AI.java
+	AI_F.java
+	AI_H.java
 
     Juan Zambrano:
+	Direction.java
+	Place.java
+	//Adding more places soon
 
     Robert Barrera:
+	Artifact.java
+	Move.java
+	Get.java, Go.java, Drop.java
+	Heal.java, Inventory.java, Look.java
+	Quit.java, Use.java
+	Artifact-UML-for-CS342-HW4.mdj
 
 OTHER FILES:
 
+	Game.java
+	GameTester.java
+	CleanLineScanner.java
+	printInfo.java
+	aarias9CharacterUML.mdj
+	keyboardScanner.java
+	makefile
 
 
 HOW TO RUN:
