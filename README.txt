@@ -24,7 +24,6 @@ Supplied Code:
 	Direction.java
 	Place.java
 	RadiatedPlace.java
-	//Adding more places soon
 	jzambr7HW4_UML.mdj
 
     Robert Barrera:
