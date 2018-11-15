@@ -1,12 +1,11 @@
 /**
  * name: Juan C. Zambrano
  * ACCCid: jzambr7
- * Class that defines the Direction objects. 
+ * Class that defines the Direction objects.
  * Two objects are held - 'to' and 'from' - 
  * to determine location placement of characters
  **/
 
-import java.util.*;
 import java.util.Scanner;
 
 public class Direction {
@@ -110,12 +109,12 @@ public class Direction {
         lineScanner = new Scanner(line);
         
         ID = lineScanner.nextInt();
-        int fromID = sc.nextInt();
+        int fromID = lineScanner.nextInt();
         from = Place.getPlaceById(fromID);
-        direction = DirType.valueOf(sc.next());
-        int toID = sc.nextInt();
+        direction = DirType.valueOf(lineScanner.next());
+        int toID = lineScanner.nextInt();
         to = Place.getPlaceById(Math.abs(toID));
-        lockPattern = sc.nextInt();
+        lockPattern = lineScanner.nextInt();
         
         if(lockPattern!= 0) this.lock();
         else this.unlock();

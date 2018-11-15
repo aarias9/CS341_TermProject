@@ -2,6 +2,7 @@
  * name: Juan C. Zambrano
  * ACCCid: jzambr7
  **/
+
 import java.util.*;
 
 public class Place 
@@ -23,8 +24,9 @@ public class Place
     public Place(Scanner sc, float version) {
         // Get ID and name
         String line = CleanLineScanner.getCleanLine(sc);
-        ID   = sc.nextInt();
-        name = sc.nextLine().split("//")[0].trim();
+        Scanner lineScanner = new Scanner(line);
+        ID   = lineScanner.nextInt();
+        name = lineScanner.nextLine().trim();
 
         // Get number of description lines
         int count = sc.nextInt();
@@ -36,7 +38,8 @@ public class Place
         	desc += (CleanLineScanner.getCleanLine(sc) + "\n");
         	i++;
         }
-        desc = description;
+        description = desc;
+        artifacts = new ArrayList<>();
 
         // Add the place to the collection of places.
         places.put(ID, this);
@@ -107,7 +110,19 @@ public class Place
     }
     
     static public Place getPlaceById(Integer id) {
-        return Place.places.get(id);
+        if(id < 0)
+            id *= -1;
+
+        if(id == 0)
+        {
+            Random r = new Random();
+            List<Integer> index = new ArrayList<>(places.keySet());
+            id = index.get(r.nextInt(index.size()));
+
+            return Place.places.get(id);
+        }
+        else
+            return Place.places.get(id);
     }
     
     static public int getPlaceSize() {
@@ -213,5 +228,7 @@ public class Place
         }
         return null;
     }
+
+
 
 }

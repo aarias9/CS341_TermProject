@@ -1,13 +1,3 @@
-/* ------------------------------------------------
-* Author: Robert L Barrera
-* NetId: rbarre4	ACCC: rbarrera
-* Class: CS 342, Fall 2018
-* Term Project Part 4: Artifact Class
-* System: Windows 10, Eclipse
-* November 14, 2018
-* -------------------------------------------------
-*/
-
 import java.util.*;
 
 public class Artifact {
@@ -41,7 +31,7 @@ public class Artifact {
 		keyPattern = cleanedLine.nextInt();	// Get keyPattern
 		name = "";	
 		while(cleanedLine.hasNext()) {		// Get name till end of line
-			name += cleanedLine.next() + " ";
+			name += cleanedLine.next().trim() + " ";
 		}
 		
 		line = CleanLineScanner.getCleanLine(passed);	

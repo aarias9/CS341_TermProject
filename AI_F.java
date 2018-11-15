@@ -4,7 +4,7 @@ public class AI_F extends  AI{
 
     public AI_F (){}
 
-    public  Move getMove(Character c, Place p)
+    public Move getMove(Character c, Place p)
     {
         Random r = new Random();
         int choice = r.nextInt(100);

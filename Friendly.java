@@ -8,7 +8,7 @@ public class Friendly extends NPC {
         isFriendly = true;
         isHostile = false;
         decider = new AI_F();
-        nPlayers++;
+        //Character.nPlayers++;
     }
 
     public void makeMove()
