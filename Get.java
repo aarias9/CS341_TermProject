@@ -1,4 +1,4 @@
-public class Get extends Move{
+public class Get extends Move {
     private Character c;
     private Place p;
     private String s;
@@ -17,7 +17,7 @@ public class Get extends Move{
         if(a != null)
         {
             c.addItem(a);
-            System.out.println(c.name() + " picked up " + a.getName());
+            System.out.println(c.name() + " picked up " + a.name());
         }
         else
             System.out.println("Sorry, " + c.name + ", there is no " + s + "here\n");

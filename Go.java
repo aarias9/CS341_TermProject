@@ -22,13 +22,9 @@ public class Go extends Move {
         if(previous == current)
         {
             if(current.directionLocked(s))
-            {
                 System.out.println("The path was locked\n");
-            }
             else
-            {
                 System.out.println("That direction doesn't Exists.\n");
-            }
         }
         else
         {

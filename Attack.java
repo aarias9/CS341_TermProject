@@ -19,7 +19,7 @@ public class Attack extends Move {
          *  find if hostile or not
          *  Once found deal damage to character
         */
-        Character victim = p.getCharacterbyName(s);
+        Character victim = p.getCharacterByName(s);
 
         if(victim.isHostile())
         {

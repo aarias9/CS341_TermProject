@@ -10,7 +10,7 @@ public class UI implements DecisionMaker {
 
         System.out.println(c.name() + ", it is your turn.");
 
-        p.display(c);
+        p.display();
 
         System.out.print("$ ");
         line = cmd.nextLine();

@@ -1,4 +1,4 @@
-public class Heal extends Move{
+public class Heal extends Move {
 
     private Artifact a;
     private Character c;
@@ -15,12 +15,12 @@ public class Heal extends Move{
     @Override
     public void execute()
     {
-        Character partner = p.getCharacterbyName(s);
+        Character partner = p.getCharacterByName(s);
 
         if(partner.isFriendly())
         {
-            c.dropItem(a.getName());
-            partner.useHealth(a.Value());
+            c.dropItem(a.name());
+            partner.useHealth(a.value());
         }
 
     }

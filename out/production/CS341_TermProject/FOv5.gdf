@@ -1,0 +1,161 @@
+GDF 5.0 Fallout // Post-apocalyptic role-playing video game
+
+PLACES 10 // Six Place in this file
+
+10 Vault Door 404 //VD
+3
+You are standing in the entrance of Vault 121
+There is a hallway to the EAST, and the NORTH-NORTHEAST
+There is a GIANT vault door the the WEST
+
+11 Atrium Hall //AH
+2
+You are standing in the heart of the vault where you can see many paths
+There is a Path to the NORTH, SOUTH, EAST, and WEST
+
+12 Living Quarters //LQ
+2
+There are many bedrooms to the North, East, West.
+There is a stairway Leading UP; a path to the SOUTH-SOUTHWEST and SOUTH
+
+13 Dinning Hall //DH
+2
+You smell delicious food being made, these can heal you.
+Theres a Stairway leading down
+
+14 Overseer Office //OO
+3
+You are in the Overseer's Office. Better leave before you get introuble....
+There's a path to the NORTH
+There's a hatch on the floor, but its locked by a computer
+
+15 Reactor Room //RR
+2
+The reactor is humming, while the tesla coils sparks in the distance.
+There is a door the SOUTH, and a ladder going up
+
+16 Armory Room //AR
+2
+You are in a room stored full of 10mm pistols and Amo, armor and bobby-pins
+The doorway to the West, leads you back to the Artium Hall
+
+17 Overseers Bedroom //OB
+3
+You are in the Overseers bedroom, you should leave before he gets back
+You found a journal opened on a desk with a code writen in it.
+The door the SOUTH will return you to the Living Quarter.
+
+18 Your Bedroom //YB
+2
+This is your bedroom, you can rest easy here
+The door to the WEST will lead you back to the Living Quarters
+
+19 BedRoom 1 //B1
+2
+Here is a spare bedroom
+The door to the EAST will lead you back to the Living Quarters
+
+//0 -> dead ended, 1 -> exit
+
+DIRECTIONS 22
+ //Vault Door
+1	10	E	11	0	// VD to AH
+2	10	NNE	12	0	// VD to LQ
+3	10	W	-1	1234	// VD to EXIT, locked
+
+ //Atrium
+4	11	N	12	0	// AH to LQ
+5	11	S	-14	1001	// AH to OO, locked
+6	11	E	16	0	// AH to AR
+7	11	W	10	0	// AH to VD
+
+ //living qrts
+8	12	N	-17	1001	// LQ to OB, locked
+9	12	E	18	0	// LQ to YB
+10	12	W	19	0	// LQ to B1
+11	12	U	13	0	// LQ to DH
+12	12	SSW	10	0	// LQ to VD
+13	12	S	11	0	// LQ to AH
+
+ //Dinning HAll
+14	13	D	12	0	// DH to LQ
+
+ // OO
+15	14	N	-11	1001	// OO to AH
+16	14	D	-15	1234	// OO to RR
+ // RR
+17	15	S	-1	1234	// RR to Exit
+18	15	U	-14	1234	// RR to OO
+ // Armory
+19	16	W	11	0	// AR to AH
+ // Rooms to LQ
+20	17	S	12	0	// OB to LQ
+21	18	W	12	0	// YB to LQ
+22	19	E	12	0	// BR to LQ
+
+CHARACTERS 4
+
+PLAYER
+11 //Atrium
+404  Vault Dweller
+100 20 //Health and attack points
+2
+Vault Dweller, you are chosen to rebuild America.
+Once the Vault opens go forth and explore.
+
+NPC
+14 //O. Office
+444 Overseer
+100 0 //Health and attack points
+2
+The Overseer watches all, he/she mainly watches over everyone
+Hired by Vault Tech, who knows what secrets he/ she holds.
+
+FRIENDLY
+0 //Atrium
+403  Vault Dweller2
+100 20 //Health and attack points
+2
+Vault Dweller2, you are chosen to rebuild America.
+Once the Vault opens go forth and explore.
+
+HOSTILE
+15
+666 Ghoul
+100 20 //Health and attack points
+2
+Due to the radiation from the Reactor room, one of the engineers has mutated.
+He has lost his mind, and attacks with out warning.
+
+ARTIFACTS 6
+
+0
+1	0	0	1001	Bobby-pins
+1
+Small and Light Weight, you can use this to pick locks
+
+16
+101	1	0	50	Stimpak
+1
+10mm rounds useful for weapons that can use it.
+
+16
+201	20	50  0	Armor
+1
+Light weight armor, its has seen better days but still wearable
+
+16
+202	75	100 0	10mm Pistol
+2
+Light weight and in excelent condition
+Can be sold for a reasonable price
+
+17
+5	0	0	1234	Overseers Journal
+1
+A password is written inside, this can be usefull later
+
+-444
+5	0	0	1234	Overseers Journal
+1
+A password is written inside, this can be usefull later
