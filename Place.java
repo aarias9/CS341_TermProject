@@ -199,6 +199,26 @@ public class Place
             return directions.get(rand.nextInt(directions.size())).toString();
 
     }
+    
+    public Place getRandomPlace() {
+    	Random rand = new Random();
+
+        //Select random number for place
+        int rand_int = rand.nextInt(places.size());
+        int counter = 0;
+        
+        for (Place p : places.values()) {
+            if (counter == rand_int && (p.id() != 0 || p.id() != 1)) {
+                return p;
+            } else if (counter == rand_int && (p.id() == 0 || p.id() == 1)) {
+                counter = 0;
+                rand_int = rand.nextInt(places.size());
+            }
+
+            counter++;
+        }
+        return null; 
+    }
 
     // Checks if the path is locked.
     public boolean directionLocked(String dir)
