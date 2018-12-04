@@ -23,6 +23,7 @@ public abstract class Character {
     private Artifact item;
     protected static int nPlayers;
     protected DecisionMaker decider;
+    protected UserInterface gui;
     protected Boolean isPLaying, isFriendly, isHostile;
 
     public  Character(){}

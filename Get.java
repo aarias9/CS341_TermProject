@@ -30,7 +30,7 @@ public class Get extends Move {
             System.out.println(c.name() + " picked up " + a.name());
         }
         else
-            System.out.println("Sorry, " + c.name + ", there is no " + s + "here\n");
+            System.out.println("Sorry, " + c.name + ", there is no " + s + " here\n");
 
         return;
     }

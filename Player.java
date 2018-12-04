@@ -20,6 +20,7 @@ public class Player extends Character {
         isPLaying = true;
         isFriendly = true;
         decider = new UI( );
+        gui = new GUI_1();
         nPlayers++;
     }
 
