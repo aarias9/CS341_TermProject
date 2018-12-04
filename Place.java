@@ -200,7 +200,7 @@ public class Place
 
     }
     
-    public Place getRandomPlace() {
+    public Place getRandomPlace(){
     	Random rand = new Random();
 
         //Select random number for place
