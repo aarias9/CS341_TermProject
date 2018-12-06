@@ -9,13 +9,19 @@
  *
  *
  */
+
 import java.io.File;
 import java.util.Scanner;
+
+import javax.swing.JFrame;
 
 public class GameTester {
 
     public static void main(String[] args)
     {
+    	GameGUI gui1 = new GameGUI();
+    	gui1.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+    	
         PrintInfo AA = new PrintInfo();
         AA.PrintName();
 
