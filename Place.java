@@ -174,7 +174,11 @@ public class Place
             System.out.println("Can't go this way. Try again!");
         }
         return this;
-    }  
+    }
+
+    public int id(){
+        return this.ID;
+    }
     
     public void removeArtifact(Artifact a) {
         artifacts.remove(a);
@@ -248,7 +252,5 @@ public class Place
         }
         return null;
     }
-
-
 
 }
