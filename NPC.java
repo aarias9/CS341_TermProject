@@ -2,7 +2,7 @@
  *  Alfonso Arias
  *  U. of Illinois, Chicago
  *  CS 342, Fall 2018
- *  Term Project: Part III
+ *  Term Project: Part IV
  *
  *  NPC.java extends Character
  *
@@ -40,7 +40,7 @@ public class NPC extends Character {
                 ex.printStackTrace();
             }
 
-            System.out.println(name + " is currently in " + current.name() +"\n\n");
+            System.out.println(name + " is currently in " + current.name() +"\n");
 
         }
         return;

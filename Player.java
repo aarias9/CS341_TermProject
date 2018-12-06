@@ -2,7 +2,7 @@
  *  Alfonso Arias
  *  U. of Illinois, Chicago
  *  CS 342, Fall 2018
- *  Term Project: Part III
+ *  Term Project: Part IV
  *
  *  Player.java
  *  extends Character
@@ -20,6 +20,7 @@ public class Player extends Character {
         isPLaying = true;
         isFriendly = true;
         decider = new UI( );
+        gui = new GUI_1();
         nPlayers++;
     }
 
