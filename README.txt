@@ -19,12 +19,15 @@ Supplied Code:
 	AI.java
 	AI_F.java
 	AI_H.java
+	IO.java
 	aarias9CharacterUML.mdj
 
     Juan Zambrano:
-	Direction.java
+	Direction.java, 
+	IO.java,
 	Place.java
-	RadiatedPlace.java
+	RadiatedPlace.java,
+	TxtInterface.java
 	jzambr7HW4_UML.mdj
 
     Robert Barrera:
