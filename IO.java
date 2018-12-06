@@ -32,7 +32,6 @@ public abstract class IO implements UserInterface{
         {
             return ui.getLine();
         }
-
     }
 
     public void selectInterface(int i)

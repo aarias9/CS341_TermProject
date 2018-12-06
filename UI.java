@@ -1,6 +1,18 @@
+/**
+ *  Alfonso Arias
+ *  U. of Illinois, Chicago
+ *  CS 342, Fall 2018
+ *  Term Project: Part IV
+ *
+ *  UI.java
+ *
+ *
+ */
+
 import java.util.Scanner;
 
 public class UI implements DecisionMaker {
+
     public UI(){}
 
     public Move getMove(Character c, Place p)
@@ -8,7 +20,7 @@ public class UI implements DecisionMaker {
         Scanner cmd = keyboardScanner.getKeyboardScan();
         String line;
 
-        System.out.println(c.name() + ", it is your turn.");
+        //System.out.println(c.name() + ", it is your turn.");
 
         p.display();
 
