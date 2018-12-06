@@ -7,21 +7,31 @@
  *  IO.java
  *
  */
-
+import java.util.Scanner;
 
 public abstract class IO implements UserInterface{
     public static final int GUI_1 = 1;
     public static final int GUI_2 = 2;
     public static final int GUI_3 = 3;
 
+    private UserInterface ui;
+
     public void display(String s)
     {
-
+        ui.display();
     }
 
-    public String getLine()
+    public String getLine(String s)
     {
-        return null;
+        if(ui instanceof TxtInterface) {
+            Scanner scanner = keyboardScanner.getKeyboardScan();
+            String userInput = scanner.nextLine();
+            return userInput;
+        }
+        else
+        {
+            return ui.getLine();
+        }
     }
 
     public void selectInterface(int i)
