@@ -1,3 +1,14 @@
+/**
+ *  Alfonso Arias
+ *  U. of Illinois, Chicago
+ *  CS 342, Fall 2018
+ *  Term Project: Part IV
+ *
+ *  AI_H.java
+ *
+ *
+ */
+
 import java.util.Random;
 
 public class AI_H extends  AI{

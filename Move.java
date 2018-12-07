@@ -1,8 +1,8 @@
 /**
- *  Alfonso Arias
+ *  Robert Barrera
  *  U. of Illinois, Chicago
  *  CS 342, Fall 2018
- *  Term Project: Part III
+ *  Term Project: Part IV
  *
  *  MOVE.java
  *
