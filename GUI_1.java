@@ -18,7 +18,7 @@ import javax.swing.JTextArea;
 public class GUI_1 implements UserInterface {
 
     @Override
-    public void display()
+    public void display(String s)
     {
         JFrame gui_1 = new JFrame("AARIAS9 GUI");
         gui_1.setSize(250, 250);
@@ -41,5 +41,11 @@ public class GUI_1 implements UserInterface {
     @Override
     public String getLine() {
         return null;
+    }
+    
+    public void switchVisibility() {
+    	// if gui_1 is visible
+    	// gui_1.setVisiblie(false)
+    	// else gui_1.setVisiblie(true)
     }
 }
