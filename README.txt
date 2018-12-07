@@ -3,8 +3,8 @@ Partners:
     Juan Zambrano, jzambr7
     Robert Barrera, rbarre4
 U. of Illinois, Chicago
-CS 341, FAll 342
-Term Project: Part IV
+CS 342, FAll 18 
+Term Project: Part V
 GROUP 9
 
 Supplied Code:
@@ -23,14 +23,18 @@ Supplied Code:
 	GUI_1
 	UserInterface.java
 	aarias9CharacterUML.mdj
+	IO.java
+	GUI_1.java
 
     Juan Zambrano:
-	Direction.java
+	Direction.java, 
+	IO.java,
 	Place.java
 	RadiatedPlace.java
 	GUI_2, IO.java,
 	TxtInterface.java
 	jzambr7HW4_UML.mdj
+	GUI_2.java
 
     Robert Barrera:
 	Artifact.java
@@ -42,6 +46,8 @@ Supplied Code:
 	Heal.java, Inventory.java, Look.java
 	Quit.java, Use.java
 	Artifact-UML-for-CS342-HW4.mdj
+	IO.java
+	GUI_3.java
 
 OTHER FILES:
 

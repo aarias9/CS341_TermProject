@@ -24,7 +24,7 @@ public class UI implements DecisionMaker {
 
         p.display();
 
-        IO.display("=====WHAT WILL YOU DO NEXT?=====");
+        IO.display(">>");
         line = cmd.nextLine();
         //line = line.trim();
 

@@ -22,6 +22,7 @@ public class IO { // Does not implement
 
     private static UserInterface ui = new TxtInterface();	// default implementor
 
+
     public static void display(String s)
     {
         ui.display(s);
@@ -55,11 +56,13 @@ public class IO { // Does not implement
         else if(i == GUI_2) {
             // new GUI_1().display();
         }
+      
         else if(i == GUI_3) {
         	/*if (!(ui instanceof GUI_3)) {
         		ui.switchVisibility();
         		ui = GUI3;
         	}*/
+
         }
         else if (i == TEXT) {
         	ui.switchVisibility();
