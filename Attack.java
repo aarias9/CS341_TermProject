@@ -37,7 +37,7 @@ public class Attack extends Move {
         }
         else
         {
-            System.out.println("What are you doing! You can't attack Friendlies!");
+            IO.display("What are you doing! You can't attack Friendlies!");
         }
     }
 }

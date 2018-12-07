@@ -27,8 +27,8 @@ public class GameTester {
 
         try
         {
-            System.out.println("Please enter a GDF File to begin");
-            Scanner FILE = new Scanner(new File(keyboardScanner.getKeyboardScan().nextLine()));
+            //System.out.println("Please enter a GDF File to begin");
+            Scanner FILE = new Scanner(new File("src/FOv5.gdf"));
 
             Game falloutv2 = new Game(FILE);
 

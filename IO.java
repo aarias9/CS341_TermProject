@@ -20,9 +20,10 @@ public class IO { // Does not implement
     //private UserInterface GUI2 = new GUI_1();
     private UserInterface GUI3 = new GUI_1(); 
 
-    private UserInterface ui = TxtInterfaceImp;	// default implementor
+    private static UserInterface ui = new TxtInterface();	// default implementor
 
-    public void display(String s)
+
+    public static void display(String s)
     {
         ui.display(s);
     }
@@ -55,18 +56,20 @@ public class IO { // Does not implement
         else if(i == GUI_2) {
             // new GUI_1().display();
         }
+      
         else if(i == GUI_3) {
-        	if (!(ui instanceof GUI_3)) {
+        	/*if (!(ui instanceof GUI_3)) {
         		ui.switchVisibility();
         		ui = GUI3;
-        	}
+        	}*/
+
         }
         else if (i == TEXT) {
         	ui.switchVisibility();
         	ui = TxtInterfaceImp;
         }
         else {	// might use ui.display() instead
-            System.out.println("Error, No GUI under that name found");
+            IO.display("Error, No GUI under that name found");
         }
     }
 

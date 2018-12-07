@@ -18,7 +18,7 @@ public class RadiatedPlace extends Place {
     {
 		if (c.isPLaying) {
 			c.health -= 5;
-			System.out.println(c.current + " is radiated. You suffer\n5 health from open contact.");
+            IO.display(c.current + " is radiated. You suffer\n5 health from open contact.");
 		}
     }
 	

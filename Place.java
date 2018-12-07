@@ -69,7 +69,7 @@ public class Place
             	return;
             }
         }
-        System.out.println("Nothing happened...");
+        IO.display("Nothing happened...");
     }
     
     Place(int ID, String name, String description){
@@ -141,21 +141,21 @@ public class Place
     
 	//display/print info
     public void display(){
-        System.out.println(name);
-        System.out.println(description);
+        IO.display(name);
+        IO.display(description);
     }
     
     public void print(){
-        System.out.println(">>================<<");
-        System.out.println("~Place Information~");
-        System.out.println(">>================<<");
-        System.out.println("Name:        " + this.name);
-        System.out.println("ID:          " + this.ID);
-        System.out.println("Description: " + this.description);
-        System.out.println(">>================<<");
+        IO.display(">>================<<");
+        IO.display("~Place Information~");
+        IO.display(">>================<<");
+        IO.display("Name:        " + this.name);
+        IO.display("ID:          " + this.ID);
+        IO.display("Description: " + this.description);
+        IO.display(">>================<<");
         for(Direction d : this.directions) {
-            System.out.println("Direction ID: " + d.getID());
-            System.out.println("Direction:    " + d.getDirection());
+            IO.display("Direction ID: " + d.getID());
+            IO.display("Direction:    " + d.getDirection());
         }
         for(Artifact a : this.artifacts)
             a.display();
@@ -171,7 +171,7 @@ public class Place
             if (d.match(s)){
                 return d.follow();
             }
-            System.out.println("Can't go this way. Try again!");
+            IO.display("Can't go this way. Try again!");
         }
         return this;
     }
@@ -246,7 +246,7 @@ public class Place
                 return Item;
             }
             if(this.artifacts.get(i).weight() == -1)
-                System.out.println("This Item cannot be picked up, Its too HEAVY");
+                IO.display("This Item cannot be picked up, Its too HEAVY");
             else
                 return null;
         }

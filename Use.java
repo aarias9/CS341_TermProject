@@ -29,7 +29,7 @@ public class Use extends Move {
         if(a != null)
             a.use(c, p);
         else
-            System.out.println("Sorry, " + c.name + ", you cannot use, " + s + "that here\n");
+            IO.display("Sorry, " + c.name + ", you cannot use, " + s + "that here\n");
         return;
     }
 }
