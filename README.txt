@@ -19,18 +19,26 @@ Supplied Code:
 	AI.java
 	AI_F.java
 	AI_H.java
+	IO.java
+	GUI_1
+	UserInterface.java
 	aarias9CharacterUML.mdj
 
     Juan Zambrano:
 	Direction.java
 	Place.java
 	RadiatedPlace.java
+	GUI_2, IO.java,
+	TxtInterface.java
 	jzambr7HW4_UML.mdj
 
     Robert Barrera:
 	Artifact.java
 	Move.java
 	Get.java, Go.java, Drop.java
+	GUI_3
+	TxtInterface.java
+	UserInterface.java
 	Heal.java, Inventory.java, Look.java
 	Quit.java, Use.java
 	Artifact-UML-for-CS342-HW4.mdj
