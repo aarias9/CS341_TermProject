@@ -20,8 +20,12 @@ public class TxtInterface implements UserInterface {
     }
 
     @Override
-    public void display()
+    public void display(String s)
     {
-        System.out.println();
+        System.out.println(s);
+    }
+    
+    public void switchVisibility() {
+    	
     }
 }

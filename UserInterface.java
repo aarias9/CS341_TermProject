@@ -10,7 +10,8 @@
 
 public interface UserInterface{
 
-    public void display();
+    public void display(String s);
     public String getLine();
+    public void switchVisibility();
 
 }
