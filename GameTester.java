@@ -19,8 +19,8 @@ public class GameTester {
 
     public static void main(String[] args)
     {
-    	GameGUI gui1 = new GameGUI();
-    	gui1.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+    	//UserInterface gui_3 = new GUI_3();
+    	//gui_3.switchVisibility();
     	
         PrintInfo AA = new PrintInfo();
         AA.PrintName();
