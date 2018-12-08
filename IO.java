@@ -21,8 +21,8 @@ public class IO { // Does not implement
     private static UserInterface ui = new TxtInterface();	// default implementor
 
     public IO( ) {
-    	//GUI1 = new GUI_1();
-    	//GUI2 = new GUI_2();
+    	GUI1 = new GUI_1();
+    	GUI2 = new GUI_2();
     	GUI3 = new GUI_3();
     }
 
@@ -33,19 +33,7 @@ public class IO { // Does not implement
 
     public String getLine()
     {
-        // I believe this should just be ui.getLine() and would do the same thing in
-    	// TxtInterface that being done in the if statement if ui was an instance
-    	// of TxtInterface. In other words, all we would need here is ui.getLine()
-    	
-//    	if(ui instanceof TxtInterface) {
-//            Scanner scanner = keyboardScanner.getKeyboardScan();
-//            String userInput = scanner.nextLine();
-//            return userInput;
-//        }
-//        else
-//        {
-//            return ui.getLine();
-//        }
+        
     	return ui.getLine();
     }
 
@@ -63,15 +51,15 @@ public class IO { // Does not implement
         	}
         }
         else if(i == GUI_2) {
-        	//if (!(ui instanceof GUI_2)) {
-        	//	ui.switchVisibility();
-        	//	ui = GUI2;
-    		//	ui.switchVisibility();
-        	//	display("UI switched to GUI2");
-        	//}
-        	//else { 
-        	//	display("UI is already GUI2");
-        	//}
+        	if (!(ui instanceof GUI_2)) {
+        		ui.switchVisibility();
+        		ui = GUI2;
+    			ui.switchVisibility();
+        		display("UI switched to GUI2");
+        	}
+        	else { 
+        		display("UI is already GUI2");
+        	}
         }
       
         else if(i == GUI_3) {
