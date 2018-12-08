@@ -38,7 +38,7 @@ public class Go extends Move {
         }
         else
         {
-            c.moveTo(p);
+            c.moveTo(current);
         }
     }
 }

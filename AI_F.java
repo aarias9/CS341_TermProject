@@ -22,10 +22,10 @@ public class AI_F extends  AI{
 
         if(choice < 40)
             return new Go(c, p, p.getRandomDirection() );
-        else if(choice < 50)
-            return new Heal(c, p, p.getRandomItem());
-        else if(choice < 60)
-            return new Attack(c, p, p.getRandomItem());
+        //else if(choice < 50)
+            //return new Heal(c, p, p.getRandomItem());
+        //else if(choice < 60)
+            //return new Attack(c, p, p.getRandomItem());
         else if(choice < 70)
             return new Get(c, p, p.getRandomItem() );
         else if(choice < 80)

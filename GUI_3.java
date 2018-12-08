@@ -86,7 +86,7 @@ public class GUI_3 implements UserInterface {
 		container.add(commandsPanel);
 		container.add(inventoryPanel);
 		
-		
+	
 		// create labels, text fields, and buttons
 		gameMessagesLabel = new JLabel ("Game Messages", SwingConstants.CENTER);
 		messagesPanel.add(gameMessagesLabel);

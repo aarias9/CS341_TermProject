@@ -21,8 +21,8 @@ public class Quit extends Move {
     @Override
     public void execute()
     {
-        c.dropAllItems();
         p.removeCharacter(c);
+
     }
 
 

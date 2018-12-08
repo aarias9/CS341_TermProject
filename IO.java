@@ -20,13 +20,12 @@ public class IO { // Does not implement
 
     private static UserInterface ui = new TxtInterface();	// default implementor
 
-
     public IO( ) {
     	//GUI1 = new GUI_1();
     	//GUI2 = new GUI_2();
     	GUI3 = new GUI_3();
     }
-    
+
     public static void display(String s)
     {
         ui.display(s);
@@ -84,7 +83,8 @@ public class IO { // Does not implement
         	}
         	else {
         		display("UI is already GUI3");
-        	}
+          }
+
         }
         else if (i == TEXT) {
         	if (!(ui instanceof TxtInterface)) {
