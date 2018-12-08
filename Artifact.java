@@ -100,7 +100,7 @@ public class Artifact {
 			//character.usehealth(this);
 		}
 		else {
-			System.out.println("Artifact was not used!");
+			IO.display("Artifact was not used!");
 		}
 				
 	}
@@ -132,11 +132,11 @@ public class Artifact {
 	
 	// Prints out artifact information
 	public void display() {
-		System.out.println("Name is: " + name + ", " + "ID is: " + ID);
-		System.out.print("Description is: " + description);
-		System.out.println("Value is: " + value + ", Mobility is: " + mobility);
-		System.out.println("KeyPattern is: " + keyPattern);
-		System.out.println("HealthPoints is: " + healthPoints);
-		System.out.println("\n");
+		IO.display("Name is: " + name + ", " + "ID is: " + ID);
+		IO.display("Description is: " + description);
+		IO.display("Value is: " + value + ", Mobility is: " + mobility);
+		IO.display("KeyPattern is: " + keyPattern);
+		IO.display("HealthPoints is: " + healthPoints);
+		IO.display("\n");
 	}
 }

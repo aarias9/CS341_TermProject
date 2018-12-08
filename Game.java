@@ -284,7 +284,10 @@ public class Game
 
         else
         {
-            System.out.println("Now lets enter into the world of " + getGameName() + "\n");
+            //System.out.println("Now lets enter into the world of " + getGameName() + "\n");
+            IO.display("Now let's enter into the world of ");
+            IO.display(getGameName() + ".\n");
+
 
             while(true)
             {
@@ -294,7 +297,7 @@ public class Game
                     Character c = characters.next();
                     if(c.isPlaying())
                     {
-                        System.out.println(c.name() + ", Is now making it's turn.");
+                        IO.display(c.name() + ", Is now making it's turn.");
                         c.makeMove();
                     }
                 }
@@ -302,7 +305,7 @@ public class Game
             }
         }// Else() playing on version 4.0 and UP
 
-        System.out.println("Game Over\nThank You for playing.");
+        IO.display("Game Over\nThank You for playing.");
     }
 
 

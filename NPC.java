@@ -40,7 +40,7 @@ public class NPC extends Character {
                 ex.printStackTrace();
             }
 
-            System.out.println(name + " is currently in " + current.name() +"\n");
+            IO.display(name + " is currently in " + current.name() +"\n");
 
         }
         return;

@@ -20,6 +20,8 @@ Supplied Code:
 	AI_F.java
 	AI_H.java
 	IO.java
+	GUI_1
+	UserInterface.java
 	aarias9CharacterUML.mdj
 	IO.java
 	GUI_1.java
@@ -28,7 +30,8 @@ Supplied Code:
 	Direction.java, 
 	IO.java,
 	Place.java
-	RadiatedPlace.java,
+	RadiatedPlace.java
+	GUI_2, IO.java,
 	TxtInterface.java
 	jzambr7HW4_UML.mdj
 	GUI_2.java
@@ -37,6 +40,9 @@ Supplied Code:
 	Artifact.java
 	Move.java
 	Get.java, Go.java, Drop.java
+	GUI_3
+	TxtInterface.java
+	UserInterface.java
 	Heal.java, Inventory.java, Look.java
 	Quit.java, Use.java
 	Artifact-UML-for-CS342-HW4.mdj

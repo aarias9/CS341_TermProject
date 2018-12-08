@@ -27,10 +27,10 @@ public class Get extends Move {
         if(a != null)
         {
             c.addItem(a);
-            System.out.println(c.name() + " picked up " + a.name());
+            IO.display(c.name() + " picked up " + a.name());
         }
         else
-            System.out.println("Sorry, " + c.name + ", there is no " + s + " here\n");
+            IO.display("Sorry, " + c.name + ", there is no " + s + " here\n");
 
         return;
     }

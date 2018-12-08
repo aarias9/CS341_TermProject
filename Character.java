@@ -125,7 +125,7 @@ public abstract class Character {
         {
             if(--nPlayers <= 0)
             {
-                System.out.println("That's the Final Player, Game Over");
+                IO.display("That's the Final Player, Game Over");
                 System.exit(0);
             }
         }
@@ -152,14 +152,14 @@ public abstract class Character {
         current = p;
         if(!current.name().equals("EXIT"))
         {
-            System.out.println("thanks for playing " + name + ".");
+            IO.display("thanks for playing " + name + ".");
             dropAllItems();
             removeCharacter(this);
         }
         else
         {
             current.addCharacter(this);
-            System.out.println(name + " Moved to " + current.name() + ".");
+            IO.display(name + " Moved to " + current.name() + ".");
         }
         return;
     }
@@ -174,16 +174,16 @@ public abstract class Character {
 
     public void display()
     {
-        System.out.println(this.name);
+        IO.display(this.name);
         for(int i = 0; i < this.description.length; i++)
-            System.out.println(this.description[i]);
+            IO.display(this.description[i]);
     }
 
     public void displayArtifacts()
     {
         for(int i = 0; i < items.size(); i++)
         {
-            System.out.println("Name: " + this.items.get(i).name() + "\n" +
+            IO.display("Name: " + this.items.get(i).name() + "\n" +
                     "Value " + this.items.get(i).value() + "\n" +
                     "Weight: " + this.items.get(i).weight() + "\n");
         }
@@ -219,7 +219,7 @@ public abstract class Character {
             if(a.name().equalsIgnoreCase(name)) {
                 items.remove(a);
                 current.addArtifact(a);
-                System.out.println(this.name + " dropped " + name + " in " + current.name());
+                IO.display(this.name + " dropped " + name + " in " + current.name());
                 return;
             }
         }
@@ -229,7 +229,7 @@ public abstract class Character {
     {
         for(Artifact a : items)
         {
-            System.out.println("Dropping " + a.name());
+            IO.display("Dropping " + a.name());
             if(!current.isExit())
                 current.addArtifact(a);
             else

@@ -20,13 +20,13 @@ public class UI implements DecisionMaker {
         Scanner cmd = keyboardScanner.getKeyboardScan();
         String line;
 
-        //System.out.println(c.name() + ", it is your turn.");
+        //IO.display(c.name() + ", it is your turn.");
 
         p.display();
 
-        System.out.print("$ ");
+        IO.display(">>");
         line = cmd.nextLine();
-        line = line.trim();
+        //line = line.trim();
 
         if(line.equalsIgnoreCase("EXIT") || line.equalsIgnoreCase("QUIT")
                 || line.equalsIgnoreCase("Q"))

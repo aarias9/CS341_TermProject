@@ -124,20 +124,20 @@ public class Direction {
     
 
     public void print(){
-    	System.out.println(">>====================<<");
-    	System.out.println("~Direction Information~");
-    	System.out.println(">>====================<<");
-        System.out.println("ID:         " + this.ID);
-        System.out.println("From Place: " + this.from.name());
-        System.out.println("To Place:   " + this.to.name());
-        System.out.println("Direction:  " + this.direction.toString());
+        IO.display(">>====================<<");
+        IO.display("~Direction Information~");
+        IO.display(">>====================<<");
+        IO.display("ID:         " + this.ID);
+        IO.display("From Place: " + this.from.name());
+        IO.display("To Place:   " + this.to.name());
+        IO.display("Direction:  " + this.direction.toString());
         if (this.isLocked()) {
-        	System.out.println("Direction is locked... ");
+            IO.display("Direction is locked... ");
         }
         else {
-        	System.out.println("Direction is unlocked! ");
+            IO.display("Direction is unlocked! ");
         }
-        System.out.println(">>====================<<");
+        IO.display(">>====================<<");
     }
 
 }

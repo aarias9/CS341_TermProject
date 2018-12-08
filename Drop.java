@@ -27,10 +27,10 @@ public class Drop extends Move {
         if(a != null)
         {
             c.dropItem(s);
-            System.out.println(c.name + " Has Dropped " + s + " in " + p.name() +"\n");
+            IO.display(c.name + " Has Dropped " + s + " in " + p.name() +"\n");
         }
         else
-            System.out.println(c.name + " You do not have " + s + " item to drop.\n");
+            IO.display(c.name + " You do not have " + s + " item to drop.\n");
 
         return;
     }

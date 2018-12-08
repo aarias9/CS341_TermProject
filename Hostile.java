@@ -25,7 +25,7 @@ public class Hostile extends NPC {
                 e.printStackTrace();
             }
 
-            System.out.println(name + " is currently in " + current.name() +"\n\n");
+            IO.display(name + " is currently in " + current.name() +"\n\n");
 
         }
     }
