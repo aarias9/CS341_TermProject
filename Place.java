@@ -54,9 +54,7 @@ public class Place
     }
     
     public void removeCharacter(Character c){
-        Character player = c;
         characters.remove(c);
-        player.removeCharacter(c);
     }
     
     //uses key to unlock door, pattern MUST match

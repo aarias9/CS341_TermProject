@@ -22,6 +22,8 @@ public class Quit extends Move {
     public void execute()
     {
         p.removeCharacter(c);
+        Character player = c;
+        player.removeCharacter(c);
 
     }
 
