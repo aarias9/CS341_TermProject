@@ -36,6 +36,7 @@ public class Player extends Character {
             Move move = decider.getMove(this, current);
             try{
                 move.execute();
+
             }
 
             catch (Exception ex)

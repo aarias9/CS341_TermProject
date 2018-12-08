@@ -26,6 +26,7 @@ public class GUI_3 implements UserInterface {
 	private String commandBuffer;
 	private JLabel inventoryLabel;
 	private JTextArea inventory;
+	private boolean check;
 	
 	// Menu Items
 	private JMenu fileMenu;
@@ -85,37 +86,27 @@ public class GUI_3 implements UserInterface {
 		container.add(commandsPanel);
 		container.add(inventoryPanel);
 		
-		
-		JPanel northPanel = new JPanel ();
-		//northPanel.setLayout (new GridLayout (2,1));
-		//container.add (northPanel, BorderLayout.NORTH);
-		
-		JPanel southPanel = new JPanel ();
-		//southPanel.setLayout(new BoxLayout(southPanel, BoxLayout.Y_AXIS));
-		//container.add (southPanel, BorderLayout.SOUTH);
-		
+	
 		// create labels, text fields, and buttons
 		gameMessagesLabel = new JLabel ("Game Messages", SwingConstants.CENTER);
 		messagesPanel.add(gameMessagesLabel);
 		messagesArea = new JTextArea(10, 10);
 		messagesArea.setEditable(false);
 		messagesPanel.add(new JScrollPane(messagesArea));
-		//container.add(new JScrollPane(messagesArea), BorderLayout.NORTH);
 		
 		commandLabel = new JLabel("Command Field", SwingConstants.CENTER);
 		commandsPanel.add(commandLabel);
-		//commandHistory = new JTextArea(5, 20);
-		//commandHistory.setEditable(false);
-		//commandsPanel.add(commandHistory);
 		commandField = new JTextField("", 40);
 		commandsPanel.add(commandField);
 		commandButton = new JButton("Send Command");
+		check = false;
 		commandButton.addActionListener(new ActionListener() {
 			public void actionPerformed( ActionEvent event )
 			{
 				commandBuffer = commandField.getText();
 				commandField.setText("");
 				messagesArea.append(commandBuffer+"\n");
+				check = true;
 			}
 		});
 		commandsPanel.add(commandButton);
@@ -129,6 +120,7 @@ public class GUI_3 implements UserInterface {
 		    
 		gui_3.setSize( 1080, 720 );
 		gui_3.setVisible(isVisible);
+		commandBuffer = "";
 	}
 	
 	@Override
@@ -138,7 +130,18 @@ public class GUI_3 implements UserInterface {
 
 	@Override
 	public String getLine() {
-		return commandBuffer;
+		while (true) {
+			try {
+				Thread.sleep(1000);
+			}
+			catch (InterruptedException e){
+				display("OOOPS");
+			}
+			if (check){
+				check = false;
+				return commandBuffer;
+			}
+		}
 	}
 
 	@Override
