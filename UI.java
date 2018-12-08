@@ -9,15 +9,16 @@
  *
  */
 
-import java.util.Scanner;
 
 public class UI implements DecisionMaker {
+	
+	private IO mainIO = new IO();
 
     public UI(){}
 
     public Move getMove(Character c, Place p)
     {
-        Scanner cmd = keyboardScanner.getKeyboardScan();
+        //Scanner cmd = keyboardScanner.getKeyboardScan();
         String line;
 
         //IO.display(c.name() + ", it is your turn.");
@@ -25,9 +26,26 @@ public class UI implements DecisionMaker {
         p.display();
 
         IO.display(">>");
-        line = cmd.nextLine();
+        line = mainIO.getLine();;
         //line = line.trim();
 
+        if(line.equalsIgnoreCase("GUI1") || line.equalsIgnoreCase("GUI2")
+        	|| line.equalsIgnoreCase("GUI3") || line.equalsIgnoreCase("TEXT")) {
+        	if (line.equalsIgnoreCase("GUI1")) {
+        		mainIO.selectInterface(1);
+        	}
+        	else if (line.equalsIgnoreCase("GUI2")) {
+        		mainIO.selectInterface(2);
+        	}
+        	else if (line.equalsIgnoreCase("GUI3")) {
+        		mainIO.selectInterface(3);
+        	}
+        	else {
+        		mainIO.selectInterface(0);
+        	}
+        	return new SelectInterface(line);
+        }
+        
         if(line.equalsIgnoreCase("EXIT") || line.equalsIgnoreCase("QUIT")
                 || line.equalsIgnoreCase("Q"))
             return  new Quit(c, p);
