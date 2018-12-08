@@ -19,8 +19,8 @@ public class GameTester {
 
     public static void main(String[] args)
     {
-    	UserInterface gui_1 = new GUI_1();
-    	gui_1.switchVisibility();
+    	//UserInterface gui_1 = new GUI_1();
+    	//gui_1.switchVisibility();
     	
         PrintInfo AA = new PrintInfo();
         AA.PrintName();

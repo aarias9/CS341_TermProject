@@ -159,6 +159,7 @@ public abstract class Character {
         else
         {
             current.addCharacter(this);
+
             IO.display(name + " Moved to " + current.name() + ".\n\n");
         }
         return;
