@@ -85,8 +85,10 @@ public class Direction {
 
     
     public Place follow(){
-        if (!locked) return this.to;
-        else return this.from;
+        if (!locked)
+            return this.to;
+        else
+            return this.from;
     }
     //end GETTERS
     
@@ -110,10 +112,10 @@ public class Direction {
         
         ID = lineScanner.nextInt();
         int fromID = lineScanner.nextInt();
-        from = Place.getPlaceById(fromID);
+        this.from = Place.getPlaceById(fromID);
         direction = DirType.valueOf(lineScanner.next());
         int toID = lineScanner.nextInt();
-        to = Place.getPlaceById(Math.abs(toID));
+        this.to = Place.getPlaceById(toID);
         lockPattern = lineScanner.nextInt();
         
         if(lockPattern!= 0) this.lock();

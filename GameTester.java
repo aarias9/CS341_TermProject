@@ -19,8 +19,8 @@ public class GameTester {
 
     public static void main(String[] args)
     {
-    	//UserInterface gui_3 = new GUI_3();
-    	//gui_3.switchVisibility();
+    	UserInterface gui_1 = new GUI_1();
+    	gui_1.switchVisibility();
     	
         PrintInfo AA = new PrintInfo();
         AA.PrintName();
@@ -28,7 +28,7 @@ public class GameTester {
         try
         {
             //System.out.println("Please enter a GDF File to begin");
-            Scanner FILE = new Scanner(new File("src/FOv5.gdf"));
+            Scanner FILE = new Scanner(new File("FOv5.gdf"));
 
             Game falloutv2 = new Game(FILE);
 

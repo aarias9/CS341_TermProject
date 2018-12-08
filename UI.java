@@ -50,11 +50,11 @@ public class UI implements DecisionMaker {
         if(line.length() > 4 && line.substring(0, 3).equalsIgnoreCase("GO "))
             return new Go(c, p, line.substring(3).trim());
 
-        if(line.length() > 4 && line.substring(0, 7).equalsIgnoreCase("ATTACK "))
-            return new Attack(c, p, line.substring(7).trim());
+        //if(line.length() > 4 && line.substring(0, 7).equalsIgnoreCase("ATTACK "))
+            //return new Attack(c, p, line.substring(7).trim());
 
-        if(line.length() > 4 && line.substring(0, 5).equalsIgnoreCase("HEAL "))
-            return new Heal(c, p, line.substring(5).trim());
+        //if(line.length() > 4 && line.substring(0, 5).equalsIgnoreCase("HEAL "))
+            //return new Heal(c, p, line.substring(5).trim());
         else
             return new Go(c, p, line);
     }

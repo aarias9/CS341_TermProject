@@ -87,11 +87,11 @@ public class GUI_3 implements UserInterface {
 		
 		
 		JPanel northPanel = new JPanel ();
-		northPanel.setLayout (new GridLayout (2,1));
+		//northPanel.setLayout (new GridLayout (2,1));
 		//container.add (northPanel, BorderLayout.NORTH);
 		
 		JPanel southPanel = new JPanel ();
-		southPanel.setLayout(new BoxLayout(southPanel, BoxLayout.Y_AXIS));
+		//southPanel.setLayout(new BoxLayout(southPanel, BoxLayout.Y_AXIS));
 		//container.add (southPanel, BorderLayout.SOUTH);
 		
 		// create labels, text fields, and buttons
