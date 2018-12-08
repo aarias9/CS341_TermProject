@@ -54,7 +54,9 @@ public class Place
     }
     
     public void removeCharacter(Character c){
+        Character player = c;
         characters.remove(c);
+        player.removeCharacter(c);
     }
     
     //uses key to unlock door, pattern MUST match
@@ -121,6 +123,12 @@ public class Place
 
             return Place.places.get(id);
         }
+        else if( id == 1)
+        {
+            Place exit = new Place(1, "Exit", "Exit");
+            return exit;
+        }
+
         else
             return Place.places.get(id);
     }
@@ -169,7 +177,8 @@ public class Place
     public Place followDirection(String s){
         for(Direction d: directions){
             if (d.match(s)){
-                return d.follow();
+                Place current = d.follow();
+                return current;
             }
             IO.display("Can't go this way. Try again!");
         }

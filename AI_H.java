@@ -22,8 +22,8 @@ public class AI_H extends  AI{
 
         if(choice < 50)
             return new Go(c, p, p.getRandomDirection() );
-        else if(choice < 60)
-            return new Attack(c, p, p.getRandomItem());
+        //else if(choice < 60)
+            //return new Attack(c, p, p.getRandomItem());
         else if(choice < 70)
             return new Get(c, p, p.getRandomItem() );
         else if(choice < 80)

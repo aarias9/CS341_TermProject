@@ -150,7 +150,7 @@ public abstract class Character {
     {
         current.removeCharacter(this);
         current = p;
-        if(!current.name().equals("EXIT"))
+        if(current.name().equalsIgnoreCase("EXIT"))
         {
             IO.display("thanks for playing " + name + ".");
             dropAllItems();
@@ -159,7 +159,7 @@ public abstract class Character {
         else
         {
             current.addCharacter(this);
-            IO.display(name + " Moved to " + current.name() + ".");
+            IO.display(name + " Moved to " + current.name() + ".\n\n");
         }
         return;
     }
@@ -170,7 +170,6 @@ public abstract class Character {
     }
 
     public abstract void makeMove();
-
 
     public void display()
     {
