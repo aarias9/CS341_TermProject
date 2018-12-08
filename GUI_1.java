@@ -30,10 +30,12 @@ public class GUI_1 extends JFrame implements UserInterface{
     private JLabel inventoryLabel;
 
     private String commandString;
+    private boolean isVisible = false;
 
     public GUI_1()
     {
         gui_1 = new JFrame("AARIAS9_GUI_1");
+        gui_1.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         north = new JPanel();
         south = new JPanel();
@@ -102,14 +104,14 @@ public class GUI_1 extends JFrame implements UserInterface{
 
         gui_1.setSize(500, 250);
         gui_1.setLocation(300,200);
-        gui_1.setVisible(true);
+        gui_1.setVisible(isVisible);
 
     }
 
     @Override
     public void display(String s)
     {
-
+    	
     }
 
     @Override
@@ -118,8 +120,13 @@ public class GUI_1 extends JFrame implements UserInterface{
     }
     
     public void switchVisibility() {
-    	// if gui_1 is visible
-    	// gui_1.setVisiblie(false)
-    	// else gui_1.setVisiblie(true)
+    	if (!isVisible) {
+    		gui_1.setVisible(true);
+			isVisible = true;
+		}
+		else {
+			gui_1.setVisible(false);
+			isVisible = false;
+		}
     }
 }
